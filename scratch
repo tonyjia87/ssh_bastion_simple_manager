@@ -1,0 +1,8 @@
+# GROUP USED FOR ALL USERS
+sudo groupadd bastionusers
+
+
+sudo adduser --ingroup bastionusers --disabled-password --gecos "" frankie
+
+
+tail /etc/group |grep bastionusers
